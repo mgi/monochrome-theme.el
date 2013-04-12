@@ -174,6 +174,19 @@
    `(w3m-tab-unselected-retrieving ((,class (:background ,dgray :foreground ,white))))
    `(w3m-tab-unselected-unseen ((,class (:background ,dgray :foreground ,white))))
 
+   ;; EShell
+   `(eshell-prompt ((,class (:foreground ,white :bold t))))
+   `(eshell-ls-archive ((,class (:inherit eshell-ls-unreadable))))
+   `(eshell-ls-backup ((,class (:inherit eshell-ls-unreadable))))
+   `(eshell-ls-clutter ((,class (:inherit eshell-ls-unreadable))))
+   `(eshell-ls-directory ((,class (:foreground ,lgray :bold t))))
+   `(eshell-ls-executable ((,class (:inherit eshell-ls-unreadable))))
+   `(eshell-ls-missing ((,class (:inherit eshell-ls-unreadable))))
+   `(eshell-ls-product ((,class (:inherit eshell-ls-unreadable))))
+   `(eshell-ls-readonly ((,class (:inherit eshell-ls-unreadable))))
+   `(eshell-ls-special ((,class (:inherit eshell-ls-unreadable))))
+   `(eshell-ls-symlink ((,class (:inherit eshell-ls-unreadable))))
+
    ;; Flyspell
    `(flyspell-duplicate ((,class (:weight unspecified :foreground unspecified
 				  :slant unspecified :underline ,lgray))))
