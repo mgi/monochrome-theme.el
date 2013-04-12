@@ -127,6 +127,27 @@
    `(message-header-to ((,class (:weight bold :foreground ,lgray))))
    `(message-cited-text ((,class (:slant italic :foreground ,lgray))))
    `(message-separator ((,class (:weight bold :foreground ,lgray))))
+
+   ;; w3m
+   `(w3m-anchor ((,class (:inherit link))))
+   `(w3m-arrived-anchor ((,class (:inherit link-visited))))
+   `(w3m-form ((,class (:foreground ,lgray))))
+   `(w3m-header-line-location-title ((,class (:foreground ,sgray))))
+   `(w3m-header-line-location-content ((,class (:foreground ,lgray))))
+   `(w3m-bold ((,class (:weight bold))))
+   `(w3m-image-anchor ((,class (:foreground ,sgray :inherit link))))
+   `(w3m-image ((,class (:foreground ,sgray))))
+   `(w3m-session-select ((,class (:foreground ,lgray))))
+   `(w3m-session-selected ((,class (:foreground ,lgray :underline t))))
+   `(w3m-tab-background ((,class (:background ,black :foreground ,black))))
+   `(w3m-tab-selected-background ((,class (:background ,black :foreground ,black))))
+   `(w3m-tab-mouse ((,class (:background ,dgray :foreground "yellow"))))
+   `(w3m-tab-selected ((,class (:background ,dgray :foreground ,white :bold t))))
+   `(w3m-tab-unselected ((,class (:background ,dgray :foreground ,lgray))))
+   `(w3m-tab-selected-retrieving ((,class (:background ,dgray :foreground ,white :bold t))))
+   `(w3m-tab-unselected-retrieving ((,class (:background ,dgray :foreground ,white))))
+   `(w3m-tab-unselected-unseen ((,class (:background ,dgray :foreground ,white))))
+
    ;; Flyspell
    `(flyspell-duplicate ((,class (:weight unspecified :foreground unspecified
 				  :slant unspecified :underline ,lgray))))
