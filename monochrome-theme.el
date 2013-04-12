@@ -29,11 +29,11 @@
   (custom-theme-set-faces
    'monochrome
 
-   `(default ((,class (:foreground ,lgray :background ,black))))
+   `(default ((,class (:foreground ,dgray :background ,black))))
    `(cursor ((,class (:background ,lgray))))
 
    ;; Highlighting faces
-   `(fringe ((,class (:background ,lgray))))
+   `(fringe ((,class (:background ,black))))
    `(highlight ((,class (:foreground ,black :background ,lgray))))
    `(region ((,class (:foreground ,black :background ,lgray))))
    `(secondary-selection ((,class (:foreground: ,black :background ,sgray))))
@@ -60,9 +60,9 @@
    `(font-lock-comment-face ((,class (:slant italic :foreground ,dgray))))
    `(font-lock-constant-face ((,class (:weight bold :foreground ,lgray))))
    `(font-lock-function-name-face ((,class (:foreground ,white))))
-   `(font-lock-keyword-face ((,class (:weight bold :foreground ,white))))
+   `(font-lock-keyword-face ((,class (:weight bold :foreground ,lgray))))
    `(font-lock-string-face ((,class (:foreground ,sgray))))
-   `(font-lock-type-face ((,class (:weight bold :foreground ,lgray))))
+   `(font-lock-type-face ((,class (:weight bold :foreground ,white))))
    `(font-lock-variable-name-face ((,class (:weight bold :foreground ,sgray))))
    `(font-lock-warning-face ((,class (:foreground "yellow"))))
 
