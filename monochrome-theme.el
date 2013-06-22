@@ -30,7 +30,7 @@
    'monochrome
 
    `(default ((,class (:foreground ,dgray :background ,black))))
-   `(cursor ((,class (:background "red"))))
+   `(cursor ((,class (:background "goldenrod"))))
 
    ;; Highlighting faces
    `(fringe ((,class (:background ,black))))
@@ -188,6 +188,10 @@
    `(eshell-ls-readonly ((,class (:inherit eshell-ls-unreadable))))
    `(eshell-ls-special ((,class (:inherit eshell-ls-unreadable))))
    `(eshell-ls-symlink ((,class (:inherit eshell-ls-unreadable))))
+
+   ;; Sh mode
+   `(sh-heredoc ((,class (:foreground ,lgray))))
+   `(sh-quoted-exec ((,class (:inherit font-lock-string-face))))
 
    ;; Flyspell
    `(flyspell-duplicate ((,class (:weight unspecified :foreground unspecified
