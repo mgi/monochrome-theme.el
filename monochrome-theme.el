@@ -44,11 +44,8 @@
    `(show-paren-mismatch ((,class (:foreground ,lgray :background "dark olive green"))))
 
    ;; Mode line faces
-   `(mode-line ((,class (:box (:line-width -1 :style released-button)
-			      :background "#e5e5e5" :foreground ,black))))
-   `(mode-line-inactive ((,class (:box (:line-width -1 :style released-button)
-				       :background "#b0b0b0"
-				       :foreground ,black))))
+   `(mode-line ((,class (:background ,lgray :foreground ,black))))
+   `(mode-line-inactive ((,class (:background ,dgray :foreground ,black))))
 
    ;; Escape and prompt faces
    `(minibuffer-prompt ((,class (:weight bold :foreground ,lgray))))
