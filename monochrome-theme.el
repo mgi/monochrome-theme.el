@@ -40,7 +40,7 @@
    `(isearch ((,class (:foreground ,black :background ,lgray))))
    `(lazy-highlight ((,class (:foreground ,black :background ,lgray))))
    `(trailing-whitespace ((,class (:background "red"))))
-   `(show-paren-match ((,class (:weight bold))))
+   `(show-paren-match ((,class (:weight bold :foreground ,lgray))))
    `(show-paren-mismatch ((,class (:foreground ,lgray :background "dark olive green"))))
 
    ;; Mode line faces
@@ -192,6 +192,11 @@
    ;; Sh mode
    `(sh-heredoc ((,class (:foreground ,lgray))))
    `(sh-quoted-exec ((,class (:inherit font-lock-string-face))))
+
+   ;; Customize
+   `(custom-variable-tag ((,class (:weight bold :foreground ,lgray))))
+   `(custom-group-tag ((,class (:inherit variable-pitch :height 1.2 :weight bold :foreground ,lgray))))
+   `(custom-state ((,class (:foreground ,lgray))))
 
    ;; Flyspell
    `(flyspell-duplicate ((,class (:weight unspecified :foreground unspecified
