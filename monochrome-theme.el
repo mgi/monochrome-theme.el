@@ -22,15 +22,15 @@
 (let ((class '((class color) (min-colors 10)))
       (black "black")
       (white "white")
-      (lgray "light gray")
-      (dgray "dark gray")
-      (sgray "light slate gray"))
+      (lgray "dark gray")
+      (dgray "dim gray")
+      (sgray "slate gray"))
 
   (custom-theme-set-faces
    'monochrome
 
    `(default ((,class (:foreground ,dgray :background ,black))))
-   `(cursor ((,class (:background ,lgray))))
+   `(cursor ((,class (:background "red"))))
 
    ;; Highlighting faces
    `(fringe ((,class (:background ,black))))
@@ -40,6 +40,8 @@
    `(isearch ((,class (:foreground ,black :background ,lgray))))
    `(lazy-highlight ((,class (:foreground ,black :background ,lgray))))
    `(trailing-whitespace ((,class (:background "red"))))
+   `(show-paren-match ((,class (:weight bold))))
+   `(show-paren-mismatch ((,class (:foreground ,lgray :background "dark olive green"))))
 
    ;; Mode line faces
    `(mode-line ((,class (:box (:line-width -1 :style released-button)
