@@ -21,8 +21,8 @@
 
 (let ((class '((class color) (min-colors 10)))
       (bg "black")
-      (fg "dim gray")
-      (gg "dark gray")
+      (fg "dark gray")
+      (gg "light gray")
       (hg "slate gray")
       (ig "white"))
 
@@ -146,6 +146,17 @@
    `(gnus-summary-normal-undownloaded ((,class (:foreground ,fg :strike-through t))))
    `(gnus-summary-normal-unread ((,class (:foreground ,gg))))
    `(gnus-summary-selected ((,class (:foreground ,gg :bold t))))
+   `(gnus-cite-1 ((,class (:foreground ,hg))))
+   `(gnus-cite-2 ((,class (:foreground ,hg))))
+   `(gnus-cite-3 ((,class (:foreground ,hg))))
+   `(gnus-cite-4 ((,class (:foreground ,hg))))
+   `(gnus-cite-5 ((,class (:foreground ,hg))))
+   `(gnus-cite-6 ((,class (:foreground ,gg))))
+   `(gnus-cite-7 ((,class (:foreground ,gg))))
+   `(gnus-cite-8 ((,class (:foreground ,gg))))
+   `(gnus-cite-9 ((,class (:foreground ,gg))))
+   `(gnus-cite-10 ((,class (:foreground ,gg))))
+   `(gnus-cite-11 ((,class (:foreground ,gg))))
 
    ;; Message faces
    `(message-header-name ((,class (:foreground ,gg))))
@@ -153,7 +164,10 @@
    `(message-header-other ((,class (:foreground ,gg))))
    `(message-header-subject ((,class (:foreground ,gg))))
    `(message-header-to ((,class (:weight bold :foreground ,gg))))
+   `(message-header-xheader ((,class (:foreground ,gg))))
+   `(message-header-newsgroups ((,class (:weight bold :foreground ,ig))))
    `(message-cited-text ((,class (:slant italic :foreground ,gg))))
+   `(message-mml ((,class (:foreground ,hg))))
    `(message-separator ((,class (:weight bold :foreground ,gg))))
 
    ;; w3m
