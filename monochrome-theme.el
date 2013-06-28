@@ -66,7 +66,7 @@
    `(font-lock-string-face ((,class (:foreground ,hg))))
    `(font-lock-type-face ((,class (:weight bold :foreground ,ig))))
    `(font-lock-variable-name-face ((,class (:weight bold :foreground ,hg))))
-   `(font-lock-warning-face ((,class (:foreground "yellow"))))
+   `(font-lock-warning-face ((,class (:weight bold :foreground ,ig))))
 
    ;; Button and link faces
    `(link ((,class (:underline t :foreground ,gg))))
@@ -146,6 +146,7 @@
    `(gnus-summary-normal-undownloaded ((,class (:foreground ,fg :strike-through t))))
    `(gnus-summary-normal-unread ((,class (:foreground ,gg))))
    `(gnus-summary-selected ((,class (:foreground ,gg :bold t))))
+   `(gnus-summary-cancelled ((,class (:foreground ,fg :strike-through t))))
    `(gnus-cite-1 ((,class (:foreground ,hg))))
    `(gnus-cite-2 ((,class (:foreground ,hg))))
    `(gnus-cite-3 ((,class (:foreground ,hg))))
@@ -157,6 +158,7 @@
    `(gnus-cite-9 ((,class (:foreground ,gg))))
    `(gnus-cite-10 ((,class (:foreground ,gg))))
    `(gnus-cite-11 ((,class (:foreground ,gg))))
+   `(mm-uu-extract ((,class (:foreground ,gg :background ,fg))))
 
    ;; Message faces
    `(message-header-name ((,class (:foreground ,gg))))
@@ -206,6 +208,10 @@
    ;; Sh mode
    `(sh-heredoc ((,class (:foreground ,gg))))
    `(sh-quoted-exec ((,class (:inherit font-lock-string-face))))
+
+   ;; Slime
+   `(slime-repl-inputed-output-face ((,class (:foreground ,hg))))
+   `(slime-repl-output-face ((,class (:weight bold :foreground ,hg))))
 
    ;; Customize
    `(custom-variable-tag ((,class (:weight bold :foreground ,gg))))
