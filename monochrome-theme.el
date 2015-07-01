@@ -12,17 +12,17 @@
 (deftheme monochrome
   "Gray on black for your focused hacking sessions.")
 
-(defun monochrome-set (bg fg gg hg ig)
-  (let ((class '((class color) (min-colors 10))))
+(defun monochrome-set (cursor bg fg gg hg ig)
+  "bg is background. fg is foreground. gg is an hilight of fg. hg is
+an hilight of gg. etc."
 
-    ;; bg is background. fg is foreground. gg is an hilight of fg. hg is
-    ;; an hilight of gg. etc.
+  (let ((class '((class color) (min-colors 10))))
 
     (custom-theme-set-faces
      'monochrome
 
      `(default ((,class (:foreground ,fg :background ,bg))))
-     `(cursor ((,class (:background "goldenrod"))))
+     `(cursor ((,class (:background ,cursor))))
 
      ;; Highlighting faces
      `(fringe ((,class (:background ,bg))))
@@ -219,11 +219,11 @@
 
 (defun monochrome-dark ()
   (interactive)
-  (monochrome-set "black" "dark gray" "light gray" "slate gray" "white"))
+  (monochrome-set "goldenrod" "black" "gray50" "gray60" "gray70" "white"))
 
 (defun monochrome-bright ()
   (interactive)
-  (monochrome-set "white smoke" "black" "dim gray" "slate gray" "dim gray"))
+  (monochrome-set "purple" "white" "gray30" "gray20" "gray10" "black"))
 
 (defun monochrome-toggle ()
   "Toggle between bright/dark version of the theme."
