@@ -57,6 +57,16 @@ an hilight of gg. etc."
      `(font-lock-variable-name-face ((,class (:weight bold :foreground ,hg))))
      `(font-lock-warning-face ((,class (:weight bold :foreground ,ig))))
 
+     ;; Info
+     `(info-menu-header ((,class (:weight bold :height 1.1))))
+     `(info-title-1 ((,class (:weight bold :height 1.8))))
+     `(info-title-2 ((,class (:weight bold :height 1.44))))
+     `(info-title-3 ((,class (:weight bold :height 1.2))))
+     `(info-title-4 ((,class (:weight bold))))
+     `(info-header-node ((,class (:foreground ,gg))))
+     `(info-header-xref ((,class (:foreground ,hg))))
+     `(info-node ((,class (:foreground ,ig))))
+
      ;; Button and link faces
      `(link ((,class (:underline t :foreground ,gg))))
      `(link-visited ((,class (:underline t :foreground ,gg))))
