@@ -42,9 +42,9 @@ an hilight of gg. etc."
      ;; Escape and prompt faces
      `(minibuffer-prompt ((,class (:weight bold :foreground ,gg))))
      `(escape-glyph ((,class (:foreground ,gg))))
-     `(error ((,class (:weight bold :slant italic :foreground "red"))))
-     `(warning ((,class (:foreground "yellow"))))
-     `(success ((,class (:foreground "green"))))
+     `(error ((,class (:weight bold :slant italic :foreground "firebrick"))))
+     `(warning ((,class (:foreground "dark orange"))))
+     `(success ((,class (:foreground "dark green"))))
 
      ;; Font lock faces
      `(font-lock-builtin-face ((,class (:foreground ,gg))))
@@ -190,6 +190,12 @@ an hilight of gg. etc."
      `(w3m-tab-selected-retrieving ((,class (:background ,fg :foreground ,ig :bold t))))
      `(w3m-tab-unselected-retrieving ((,class (:background ,fg :foreground ,ig))))
      `(w3m-tab-unselected-unseen ((,class (:background ,fg :foreground ,ig))))
+
+     ;; Org-mode
+     `(org-agenda-structure ((,class (:foreground ,fg :underline t))))
+     `(org-agenda-date ((,class (:foreground ,gg :underline nil))))
+     `(org-agenda-date-today ((,class (:foreground ,hg :bold t :underline nil))))
+     `(org-time-grid ((,class (:foreground ,fg))))
 
      ;; EShell
      `(eshell-prompt ((,class (:foreground ,ig :bold t))))
