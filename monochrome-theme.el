@@ -12,9 +12,14 @@
 (deftheme monochrome
   "Gray on black for your focused hacking sessions.")
 
-(defun monochrome-set (cursor bg fg gg hg ig)
-  "bg is background. fg is foreground. gg is an hilight of fg. hg is
-an hilight of gg. etc."
+(defun monochrome-set (cursor bg fg gg hg ig eg dg)
+  "bg is background.
+   fg is foreground.
+   gg is an fg with more contrast.
+   hg is an gg with more contrast.
+   ig is an hg with more contrast.
+   eg is an fg with less contrast.
+   dg is an eg with less contrast."
 
   (let ((class '((class color) (min-colors 10))))
 
@@ -146,17 +151,17 @@ an hilight of gg. etc."
      `(gnus-summary-normal-unread ((,class (:foreground ,gg))))
      `(gnus-summary-selected ((,class (:foreground ,gg :bold t))))
      `(gnus-summary-cancelled ((,class (:foreground ,fg :strike-through t))))
-     `(gnus-cite-1 ((,class (:foreground ,hg))))
-     `(gnus-cite-2 ((,class (:foreground ,hg))))
-     `(gnus-cite-3 ((,class (:foreground ,hg))))
-     `(gnus-cite-4 ((,class (:foreground ,hg))))
-     `(gnus-cite-5 ((,class (:foreground ,hg))))
-     `(gnus-cite-6 ((,class (:foreground ,gg))))
-     `(gnus-cite-7 ((,class (:foreground ,gg))))
-     `(gnus-cite-8 ((,class (:foreground ,gg))))
-     `(gnus-cite-9 ((,class (:foreground ,gg))))
-     `(gnus-cite-10 ((,class (:foreground ,gg))))
-     `(gnus-cite-11 ((,class (:foreground ,gg))))
+     `(gnus-cite-1 ((,class (:foreground ,eg))))
+     `(gnus-cite-2 ((,class (:foreground ,eg))))
+     `(gnus-cite-3 ((,class (:foreground ,eg))))
+     `(gnus-cite-4 ((,class (:foreground ,eg))))
+     `(gnus-cite-5 ((,class (:foreground ,eg))))
+     `(gnus-cite-6 ((,class (:foreground ,dg))))
+     `(gnus-cite-7 ((,class (:foreground ,dg))))
+     `(gnus-cite-8 ((,class (:foreground ,dg))))
+     `(gnus-cite-9 ((,class (:foreground ,dg))))
+     `(gnus-cite-10 ((,class (:foreground ,dg))))
+     `(gnus-cite-11 ((,class (:foreground ,dg))))
      `(mm-uu-extract ((,class (:foreground ,gg :background ,fg))))
 
      ;; Message faces
@@ -235,11 +240,11 @@ an hilight of gg. etc."
 
 (defun monochrome-dark ()
   (interactive)
-  (monochrome-set "goldenrod" "black" "gray50" "gray60" "gray70" "white"))
+  (monochrome-set "goldenrod" "black" "gray50" "gray60" "gray70" "white" "gray40" "gray30"))
 
 (defun monochrome-bright ()
   (interactive)
-  (monochrome-set "purple" "white" "gray30" "gray20" "gray10" "black"))
+  (monochrome-set "purple" "white" "gray30" "gray20" "gray10" "black" "gray40" "gray50"))
 
 (defun monochrome-toggle ()
   "Toggle between bright/dark version of the theme."
