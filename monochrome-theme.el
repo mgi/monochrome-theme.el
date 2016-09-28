@@ -75,30 +75,6 @@
      `(link ((,class (:underline t :foreground ,gg))))
      `(link-visited ((,class (:underline t :foreground ,gg))))
 
-     ;; Speedbar
-     `(speedbar-button-face ((,class (:foreground ,fg))))
-     `(speedbar-file-face ((,class (:foreground ,gg))))
-     `(speedbar-directory-face ((,class (:weight bold :foreground ,fg))))
-     `(speedbar-tag-face ((,class (:foreground ,fg))))
-     `(speedbar-selected-face ((,class (:underline ,gg :foreground ,gg))))
-     `(speedbar-highlight-face ((,class (:weight bold :background ,bg :foreground ,fg))))
-
-     ;; ido
-     `(ido-first-match ((,class (:foreground ,gg))))
-     `(ido-only-match ((,class (:underline ,gg :foreground ,gg))))
-     `(ido-subdir ((,class (:weight bold :foreground ,fg))))
-
-     ;; MuMaMo
-     `(mumamo-background-chunk-major ((,class (:background ,bg))))
-     `(mumamo-background-chunk-submode1 ((,class (:background ,bg))))
-     `(mumamo-background-chunk-submode2 ((,class (:background ,bg))))
-     `(mumamo-background-chunk-submode3 ((,class (:background ,bg))))
-     `(mumamo-background-chunk-submode4 ((,class (:background ,bg))))
-     `(mumamo-border-face-in ((,class (:slant unspecified :underline unspecified
-					      :weight bold :foreground ,fg))))
-     `(mumamo-border-face-out ((,class (:slant unspecified :underline unspecified
-					       :weight bold :foreground ,fg))))
-
      ;; Gnus faces
      `(gnus-group-news-1 ((,class (:weight bold :foreground ,gg))))
      `(gnus-group-news-1-low ((,class (:foreground ,gg))))
@@ -225,13 +201,7 @@
      ;; Customize
      `(custom-variable-tag ((,class (:weight bold :foreground ,gg))))
      `(custom-group-tag ((,class (:inherit variable-pitch :height 1.2 :weight bold :foreground ,gg))))
-     `(custom-state ((,class (:foreground ,gg))))
-
-     ;; Flyspell
-     `(flyspell-duplicate ((,class (:weight unspecified :foreground unspecified
-					    :slant unspecified :underline ,gg))))
-     `(flyspell-incorrect ((,class (:weight unspecified :foreground unspecified
-					    :slant unspecified :underline ,gg)))))))
+     `(custom-state ((,class (:foreground ,gg)))))))
 
 (defun monochrome-dark ()
   (interactive)
