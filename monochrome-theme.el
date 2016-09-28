@@ -61,12 +61,17 @@
      `(font-lock-variable-name-face ((,class (:weight bold :foreground ,fg))))
      `(font-lock-warning-face ((,class (:weight bold :foreground ,fg))))
 
+     ;; Dired
+     `(dired-directory ((,class (:weight bold))))
+
      ;; Info
      `(info-menu-header ((,class (:weight bold :height 1.1))))
+     `(info-menu-star ((,class (:weight normal))))
      `(info-title-1 ((,class (:weight bold :height 1.8))))
      `(info-title-2 ((,class (:weight bold :height 1.44))))
      `(info-title-3 ((,class (:weight bold :height 1.2))))
      `(info-title-4 ((,class (:weight bold))))
+     `(info-xref ((,class (:weight normal))))
      `(info-header-node ((,class (:foreground ,gg))))
      `(info-header-xref ((,class (:foreground ,fg))))
      `(info-node ((,class (:foreground ,fg))))
@@ -179,10 +184,11 @@
 
      ;; EShell
      `(eshell-prompt ((,class (:foreground ,fg :bold t))))
+     `(eshell-ls-unreadable ((,class (:foreground ,dg))))
      `(eshell-ls-archive ((,class (:inherit eshell-ls-unreadable))))
      `(eshell-ls-backup ((,class (:inherit eshell-ls-unreadable))))
      `(eshell-ls-clutter ((,class (:inherit eshell-ls-unreadable))))
-     `(eshell-ls-directory ((,class (:foreground ,gg :bold t))))
+     `(eshell-ls-directory ((,class (:inherit dired-directory))))
      `(eshell-ls-executable ((,class (:inherit eshell-ls-unreadable))))
      `(eshell-ls-missing ((,class (:inherit eshell-ls-unreadable))))
      `(eshell-ls-product ((,class (:inherit eshell-ls-unreadable))))
