@@ -52,13 +52,13 @@
 
      ;; Font lock faces
      `(font-lock-builtin-face ((,class (:foreground ,fg))))
-     `(font-lock-comment-face ((,class (:weight bold :foreground ,gg))))
-     `(font-lock-constant-face ((,class (:weight bold :foreground ,gg))))
+     `(font-lock-comment-face ((,class (:weight bold :foreground ,fg))))
+     `(font-lock-constant-face ((,class (:foreground ,fg))))
      `(font-lock-function-name-face ((,class (:foreground ,fg))))
      `(font-lock-keyword-face ((,class (:foreground ,fg))))
      `(font-lock-string-face ((,class (:foreground ,gg))))
      `(font-lock-type-face ((,class (:foreground ,fg))))
-     `(font-lock-variable-name-face ((,class (:weight bold :foreground ,fg))))
+     `(font-lock-variable-name-face ((,class (:foreground ,fg))))
      `(font-lock-warning-face ((,class (:weight bold :foreground ,fg))))
 
      ;; Dired
