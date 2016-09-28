@@ -10,7 +10,7 @@
 ;; Works with Emacs 25.
 
 (deftheme monochrome
-  "Gray on black for your focused hacking sessions.")
+  "Monochrome for your focused hacking sessions.")
 
 (defun monochrome-set (cursor bg fg gg eg dg)
   "bg is background.
