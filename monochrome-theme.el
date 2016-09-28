@@ -12,7 +12,7 @@
 (deftheme monochrome
   "Monochrome for your focused hacking sessions.")
 
-(defun monochrome-set (cursor bg fg gg eg dg)
+(defun monochrome-set (bg fg gg eg dg)
   "bg is background.
    fg is foreground.
    gg is an fg with more contrast.
@@ -25,7 +25,7 @@
      'monochrome
 
      `(default ((,class (:foreground ,fg :background ,bg))))
-     `(cursor ((,class (:background ,cursor))))
+     `(cursor ((,class (:background ,fg))))
 
      ;; Highlighting faces
      `(fringe ((,class (:background ,bg))))
@@ -33,6 +33,7 @@
      `(region ((,class (:foreground ,bg :background ,fg))))
      `(secondary-selection ((,class (:foreground: ,bg :background ,fg))))
      `(isearch ((,class (:foreground ,bg :background ,fg))))
+     `(isearch-fail ((,class (:background ,fg :foreground ,bg))))
      `(lazy-highlight ((,class (:foreground ,bg :background ,fg))))
      `(trailing-whitespace ((,class (:background ,fg))))
      `(show-paren-match ((,class (:weight bold :foreground ,fg))))
@@ -234,11 +235,11 @@
 
 (defun monochrome-dark ()
   (interactive)
-  (monochrome-set "goldenrod" "black" "gray70" "white" "gray40" "gray30"))
+  (monochrome-set "black" "gray70" "white" "gray40" "gray30"))
 
 (defun monochrome-bright ()
   (interactive)
-  (monochrome-set "purple" "white" "gray20" "black" "gray40" "gray50"))
+  (monochrome-set "white" "gray20" "black" "gray40" "gray50"))
 
 (defun monochrome-toggle ()
   "Toggle between bright/dark version of the theme."
