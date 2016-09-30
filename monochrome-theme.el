@@ -34,7 +34,7 @@
      `(secondary-selection ((,class (:foreground: ,bg :background ,fg))))
      `(isearch ((,class (:foreground ,bg :background ,fg))))
      `(isearch-fail ((,class (:background ,fg :foreground ,bg))))
-     `(lazy-highlight ((,class (:foreground ,bg :background ,fg))))
+     `(lazy-highlight ((,class (:foreground ,bg :background ,eg))))
      `(trailing-whitespace ((,class (:background ,fg))))
      `(show-paren-match ((,class (:weight bold :foreground ,fg))))
      `(show-paren-mismatch ((,class (:foreground ,bg :background ,fg))))
@@ -79,7 +79,7 @@
      `(Info-quoted ((,class (:inherit normal))))
 
      ;; Button and link faces
-     `(link ((,class (:underline t :foreground ,gg))))
+     `(link ((,class (:underline t :foreground ,gg :weight bold))))
      `(link-visited ((,class (:underline t :foreground ,gg))))
 
      ;; Gnus faces
