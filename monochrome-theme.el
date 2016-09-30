@@ -46,9 +46,9 @@
      ;; Escape and prompt faces
      `(minibuffer-prompt ((,class (:weight bold :foreground ,gg))))
      `(escape-glyph ((,class (:foreground ,gg))))
-     `(error ((,class (:weight bold :foreground "firebrick"))))
-     `(warning ((,class (:foreground "dark orange"))))
-     `(success ((,class (:foreground "dark green"))))
+     `(error ((,class (:weight bold :foreground ,gg))))
+     `(warning ((,class (:underline t))))
+     `(success ((,class (:foreground ,gg))))
 
      ;; Font lock faces
      `(font-lock-builtin-face ((,class (:foreground ,fg))))
@@ -60,6 +60,7 @@
      `(font-lock-type-face ((,class (:foreground ,fg))))
      `(font-lock-variable-name-face ((,class (:foreground ,fg))))
      `(font-lock-warning-face ((,class (:weight bold :foreground ,fg))))
+     `(font-lock-regexp-grouping-backslash ((,class (:inherit normal))))
 
      ;; Dired
      `(dired-directory ((,class (:weight bold))))
@@ -97,7 +98,7 @@
      `(gnus-group-news-5-low ((,class (:foreground ,gg))))
      `(gnus-group-news-5-empty ((,class (:foreground ,fg))))
      `(gnus-group-news-low ((,class (:foreground ,gg))))
-     `(gnus-group-mail-news-empty ((,class (:foreground ,fg :strike-through t))))
+     `(gnus-group-news-low-empty ((,class (:foreground ,fg :strike-through t))))
      `(gnus-group-mail-1 ((,class (:weight bold :foreground ,gg))))
      `(gnus-group-mail-1-low ((,class (:foreground ,gg))))
      `(gnus-group-mail-1-empty ((,class (:foreground ,fg))))
@@ -203,6 +204,18 @@
      ;; Slime
      `(slime-repl-inputed-output-face ((,class (:foreground ,fg))))
      `(slime-repl-output-face ((,class (:weight bold :foreground ,fg))))
+
+     ;; Mingus
+     `(mingus-directory-face ((,class (:inherit dired-directory))))
+     `(mingus-artist-face ((,class (:foreground ,fg))))
+     `(mingus-album-face ((,class (:foreground ,fg :underline t))))
+     `(mingus-album-stale-face ((,class (:foreground ,fg))))
+     `(mingus-song-file-face ((,class (:foreground ,fg))))
+     `(mingus-playlist-face ((,class (:foreground ,fg))))
+     `(mingus-mark-face ((,class (:foreground ,gg))))
+     `(mingus-playing-face ((,class (:foreground ,gg))))
+     `(mingus-pausing-face ((,class (:foreground ,eg))))
+     `(mingus-stopped-face ((,class (:foreground ,gg))))
 
      ;; Customize
      `(custom-variable-tag ((,class (:weight bold :foreground ,gg))))
