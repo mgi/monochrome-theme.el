@@ -76,6 +76,7 @@
      `(info-header-node ((,class (:foreground ,gg))))
      `(info-header-xref ((,class (:foreground ,fg))))
      `(info-node ((,class (:foreground ,fg))))
+     `(Info-quoted ((,class (:inherit normal))))
 
      ;; Button and link faces
      `(link ((,class (:underline t :foreground ,gg))))
